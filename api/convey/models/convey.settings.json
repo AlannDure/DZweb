@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conveys",
+  "info": {
+    "name": "Convey"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sideTitleOne": {
+      "type": "string"
+    },
+    "sideTextOne": {
+      "type": "string"
+    },
+    "sideTitleTwo": {
+      "type": "string"
+    },
+    "sideTitleThree": {
+      "type": "string"
+    },
+    "sideTextThree": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroText": {
+      "type": "string"
+    },
+    "hero": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "midBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "midText": {
+      "type": "string"
+    },
+    "taskImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "taskTitle": {
+      "type": "string"
+    },
+    "taskText": {
+      "type": "string"
+    },
+    "solutionImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "solutionText": {
+      "type": "string"
+    },
+    "featureMainTitle": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repeater.features"
+    },
+    "featureSideImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "sideTextTwo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repeater.task-repeater"
+    },
+    "solutionTitle": {
+      "type": "string"
+    },
+    "arrow": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

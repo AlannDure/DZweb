@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "HomePage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "hero": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "titleBlueBox": {
+      "type": "string"
+    },
+    "descriptionBlueBox": {
+      "type": "string"
+    },
+    "parallax": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "parallaxTitle": {
+      "type": "string"
+    },
+    "parallaxDescription": {
+      "type": "string"
+    },
+    "midBanner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "midBannerText": {
+      "type": "string"
+    },
+    "bottomImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "getInTouchTitle": {
+      "type": "string"
+    },
+    "getIntouchDescription": {
+      "type": "string"
+    },
+    "heroMainText": {
+      "type": "string"
+    },
+    "heroAltText": {
+      "type": "string"
+    },
+    "heroAltTextTwo": {
+      "type": "string"
+    },
+    "arrow": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

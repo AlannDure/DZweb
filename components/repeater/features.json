@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_repeater_features",
+  "info": {
+    "name": "features",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "featureTitle": {
+      "type": "string"
+    },
+    "featureText": {
+      "type": "string"
+    },
+    "featureImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

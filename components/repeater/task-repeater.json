@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_repeater_task_repeaters",
+  "info": {
+    "name": "taskRepeater",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "task": {
+      "type": "string"
+    }
+  }
+}

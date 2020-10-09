@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solutions_pages",
+  "info": {
+    "name": "Solutions page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Hero": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "MainTitle": {
+      "type": "richtext"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Repeater": {
+      "type": "component",
+      "repeatable": true,
+      "component": "repeater.repeater"
+    },
+    "BottomImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "BottomText": {
+      "type": "richtext"
+    }
+  }
+}
